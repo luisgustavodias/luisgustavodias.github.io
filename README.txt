@@ -1,3 +1,10 @@
+Author: Luis G. D. Simão
+Contact: luisgustavoaut@gmail.com
+
+This is a personal web site, any problems, please contact using my email.
+The template was obtained with:
+
+
 Solid State by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
