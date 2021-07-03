@@ -1,3 +1,8 @@
+<?php
+$tituloHome = 'Início | LGD Simão';
+?>
+
+
 <!DOCTYPE HTML>
 <!--
 	Solid State by HTML5 UP
@@ -6,7 +11,7 @@
 -->
 <html>
 	<head>
-		<title>Home | LGD Simão</title>
+		<title><?php echo $titulo; ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,24 +23,24 @@
 			<div id="page-wrapper">
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">Início | LGD Simão</a></h1>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a href="#menu">Opções</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
-							<h2>Menu</h2>
+							<h2>Opções</h2>
 							<ul class="links">
 								<!-- Serão adicionados depois
 	 							<li><a href="controle_robusto.html">Controle Robusto</a></li>
 								<li><a href="dsp.html">DSP</a></li> 
 								-->
-								<li><a href="Latex.html">Latex</a></li>
+								<li><a href="latex.html">Latex</a></li>
 							</ul>
-							<a href="#" class="close">Close</a>
+							<a href="#" class="close">Fechar</a>
 						</div>
 					</nav>
 
@@ -43,44 +48,46 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>LGD Simão</h2>
-								<p>Bem vindo à minha página na internet, meu nome é Luis Gustavo Dias Simão. Caso queira me conhecer melhor</p>
-							<p></p>
+
+							<p>Tecnologias e técnicas | Latex, DSP, Controle, Automação, Arduíno, HTML, CSS, Scrum</p>
 						</div>
 					</section>
 
-				<!-- Wrapper -->
+				<!-- Wrapper -->		
 					<section id="wrapper">
 
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="eletrica.html" class="image"><img src="images/img.jpg" alt="" /></a>
+									<a href="automacao.html" class="image"><img src="images/foguete.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Luis Gustavo Dias Simão</h2>
-										<p>Engenheiro de Controle e Automação pela <a href="www.unifei.edu.br">UNIFEI</a></p>
-										<p></p>
+										<h2 class="major">Sistemas de Controle</h2>
+										<p>Criamos sistemas de controle de processos tais como pilotar um avião de maneira autônoma, lançar e pousar um fogueten, mas os sistemas de controle estão presentes na natureza, como o pâncreas, que regula o nosso nível de açúcar do sangue. Em situações de estresse agudo, nossa adrenalina aumenta junto com a frequência cardíaca, fazendo com que mais oxigênio seja levado às nossas células.
+										<a href="controle.html" class="special">Quero saber mais!</a>
 									</div>
-								</div>
+								</div>	
 							</section>
 
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="automacao.html" class="image"><img src="images/1.jpg" alt="" /></a>
+									<a href="civil.html" class="image"><img src="images/filtro.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Engenharia de Controle e Automação</h2>
-										<p>Trazemos soluções para sua indústria, tornando-a mais eficiente, reduzindo os riscos associados a ambientes de trabalho insalúbre. Temporizadores, reguladores de temperatura, controle de processos de forma automática!</p>
-										<a href="automacao.html" class="special">Saiba mais</a>
+										<h2 class="major">Processamento Digital de Sinais</h2>
+										<p>Podemos observar diversos sistemas que necessitam da coleta e processamento dos sinais, </p>
+										<a href="eletrica.html" class="special">Saiba mais</a>
 									</div>
 								</div>
+
+
 							</section>
 
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="civil.html" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="civil.html" class="image"><img src="images/latex.png" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Processamento Digital de Sinais</h2>
+										<h2 class="major">Latex</h2>
 										<p>Alguns projetos utilizando filtros para aplicações distintas em controle de processos dinâmicos.</p>
 										<p>Abordaremos diferentes técnicas em diversas aplicações, buscando elucidar problemas e compartilhar novos conhecimentos.</p>
 										<a href="eletrica.html" class="special">Saiba mais</a>
@@ -91,34 +98,34 @@
 
 						<!-- Five -->
 							<section id="five" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="telecom.html" class="image"><img src="images/pic02.jpg" alt="" /></a>
+														<div class="inner">
+									<a href="civil.html" class="image"><img src="images/1.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Latex</h2>
-										<p>Uma das ferramentas de criação de documentos mais poderosas e desafiadoras.</p>
-										<p>Útil para realização de trabalhos acadêmicos que exigem normas técnicas, tais como relatórios, monografias, artigos, teses de doutorado e afins.</p>										 
-										<p>Permite ao usuário realizar referências genéricas que serão numeradas automaticamente, tabelas, sumário, capa alinhamento, tudo gerado de forma automática.</p>	
-										<p>Como qualquer ferramenta ela possui limitações e abordamos os problemas frequentes, soluções e dicas em geral</p>
-										<a href="Latex.html" class="special">Saiba mais</a>
+										<h2 class="major">Projetos Sociais</h2>
+										<p>Retribuir à sociedade o conhecimento que esta me permitiu obter. Caso você queira ajudar, pode acessar as redes sociais destes projetos e curtir e compartilhar suas publicações. Tudo isso gera visibilidade à pagina e atrai patrocinadores. Sendo assim, apresento dois dos quais participei:</p>
+										<p><b>Fundação Asimo</b>, onde lecionamos aulas de robótica para crianças da rede pública de ensino que puderam competir na OBR (Olimíada Brasileira de Robótica)</p>
+										<p><b>Engenheiros Sem Fronteiras de Itajubá</b>, onde criamos projetos para redução da desigualdade social</p>
+										<a href="eletrica.html" class="special">Saiba mais</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- Six -->
-							<section id="six" class="wrapper spotlight style3">
+
+							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="mecanica.html" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="eletrica.html" class="image"><img src="images/img.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Engenharia Mecânica</h2>
-										<p>Realizamos projetos mecânicos que facilitam seu trabalho, reduzem custos e trazem segurança na hora do trabalho.</p>
-										<a href="mecanica.html" class="special">Saiba mais</a>
+										<h2 class="major">Sobre o autor</h2>
+										<p>Sou Engenheiro de Controle e Automação pela <a href="www.unifei.edu.br"><b>Universidade Federal de Itajubá</b></a> e Técnico em Informática pela <a href="https://portal.ifs.ifsuldeminas.edu.br/"><b>Instituro Federal do Sul de Minas Gerais</b></a></p>
 									</div>
-								</div>
+								</div>		
+
+
 							</section>
-						
+					
 						
 						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
+<!-- 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Projetos</h2>
 									<p>Veja alguns de nossos projetos em destaque</p>
@@ -154,17 +161,17 @@
 								</div>
 							</section>
 
-					</section>
+					</section> -->
 
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<h2 class="major">Entre em contato</h2>
+							<p>Este é um site pessoal e de conteúdo público, você é convidado a deixar suas sugestões. Lembre-se de ser educado e objetivo. Prezamos pelo bom convívio pessoal mas também virtual.</p>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
-										<label for="name">Name</label>
+										<label for="name">Nome</label>
 										<input type="text" name="name" id="name" />
 									</div>
 									<div class="field">
@@ -172,7 +179,7 @@
 										<input type="email" name="email" id="email" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
+										<label for="message">Mensagem</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
@@ -182,15 +189,13 @@
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+										Brasil<br />
+									Minas Gerais<br />
+									Santa Rita de Caldas
 								</li>
-								<li class="icon solid fa-phone"><a href="https://wa.me/5535997371195?text=Ei%20Joao%20CHUPA%20ESSA%20MANGA?">(000) 000-0000</a></li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="icon solid fa-envelope"><a href="#">luisgustavoaut@gmail.com</a></li>
+								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/lgustavodiass">facebook.com/lgustavodiass</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/diad_luis/">instagram.com/diad_luis/</a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
