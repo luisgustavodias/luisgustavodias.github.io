@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script type="text/javascript" id="MathJax-script" async
+  			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<title>Controle | LGD Simão</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Controle | LGD Simão</a></h1>
+						<nav>
+							<a href="#menu">Opções</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Opções</h2>
+							<ul class="links">
+								<li><a href="index.html">Página Inicial</a></li>
+								<li><a href="latex.html">Latex</a></li>
+								<li><a href="dsp.html">DSP</a></li>
+							</ul>
+							<a href="#" class="close">Fechar</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Controle</h2>
+								<p>
+								Entenda o que é, onde, quando e porque surgiu, um resumo da teoria e sua aplicação em projetos.
+								</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Desvendando a teoria de controle</h3>
+									
+									<p>
+									Se você já sabe o que é, sugiro pular esta introdução, mas se mesmo já sabendo deseja ler, sinta-se à vontade para revisar qualquer conceito abordado e dar sua sugestão de correção ou aprimoramento. 									
+									</p>
+
+									<p>
+									Esta secção é para você que não possui conhecimento algum em relação à teoria e deseja compreender alguma coisa, seja pela curiosidade humana ou mesmo . Ora, trata-se de um campo de estudos tal como a matemática e completamente fundado nela, mas com uma abordagem mais prática, simples e com um potencial incrível.
+									</p>
+
+									<p>
+									Teoria de controle é como regular a temperatura do chuveiro quando vamos tomar banho. A temperatura é a saída que se deseja controlar. A vazão de água é a entrada do sistema, a torneira é o atuador, sua mão o sensor, seu cérebro o controlador e e assim tempos um sistema de controle, com planta, entrada, saída, controlador, sensor, realimentação e tudo mais.
+									</p>
+
+									<p>
+									Vamos examinar um pouco mais este sistema, ele possui, duas <b>entradas</b> que podem ser controladas e duas <b>saídas</b> que deseja-se controlar.
+									</p>
+									
+									<p>
+									<b>Entrada 1</b>. A posição do chuveiro: possui três <b>estados</b> (inverno, verão e desligado) que determinam a resistência e consequentemente sua temperatura e a da água que passa por ela, estamos controlando a resistência, que controla a corrente que controla o calor que é entregue ao <b>sistema</b>.
+									</p>
+									
+									<p>
+									<b>Entrada 2.</b> A vazão de água: sabemos que a temperatura da água pode aumentar reduzindo-se a vazão de água através da torneira, isso pois se a temperatura que é entregue é constante a variação da massa de água faz variar a massa específica da água. Simplificando com um exemplo, é como aquecer 1 litro de água e 2 litros de água em uma mesma temperatura, por um mesmo tempo. Ao final aquela com 1 litro estará mais aquecida que aquela de 2 litros.
+									</p>
+									
+									<p>
+									<b>Saída 1.</b> A temperatura da água: considera-se como saída aquela unidade que se deseja controlar.
+									</p>
+									
+									<p>
+									<b>Saída 2.</b> A vazão de água: outra <b>variável que se deseja controlar</b>
+									</p>
+									
+									<p>
+									Definias as entradas e saídas e as relações entre entrada e saída por meio de sistemas de equações matemáticas, do tipo
+									</p>
+
+									$$ a_2 \frac{dc^2(t)}{dt^2} + a_1 \frac{dc(t)}{dt} + a_0c(t) = b_1 \frac{dr(t)}{dt} + a_0r(t)$$
+
+									<p>
+									caso sua representação seja linear e invariante no tempo, podemos transformar seu domínio e estabelecer uma representação do domínio da frequência
+									</p>
+									
+									$$ C(s)(a_2s^2 + a_1s + a_0) = R(s)(b_2s^2 + b_1s + b_0) $$	
+									
+									<p>
+									mas por hora saber que ela existe e pode ser representada por um diagrama de blocos.<br>
+									</p>
+
+									<!-- Inicio do bloco imagem com legenda  -->
+									<br>
+									<center>Representação em Diagrama de Blocos <br>
+									<img src="images/Controle/plantaMalhaAberta.png" alt="" width="300" /> <br>
+									<h8> Fonte: Autoria Própria</h8>
+									</center> <br><br>
+									<!-- Fim do bloco imagem com legenda -->									
+
+									<p>
+									A <b>planta</b> do sistema pode ser determinada por relações físicas em nosso caso modeladas por, pressão da água e corrente, nossa caixa preta é \( G(s) \) e ela é definida por uma equação entre entrada \( R(s) \) e saída \( C(s) \). Com uma de suas mãos você abre a torneira, com a outra você afere sua temperatura.
+									</p>									
+
+									<h3 class="major">Instalações Industriais</h3>
+									<p>Oferecemos projetos elétricos de média tensão, para sua indústria ou comércio que necessitam</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
+
+											<h3 class="major">Projeto executados</h3>
+											
+											<p>Aqui temos o exemplo de um projeto de iluminação em residência</p>
+											<a href="#" class="special">Saiba mais</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
+											<h3 class="major">Projeto executado dois</h3>
+											<p>Aqui temos outro exemploe de projeto</p>
+											<a href="#" class="special">Saiba mais</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contate-nos</h2>
+							<p>Dúvidas e sugestões, entre em contato</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Nome</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Mensagem</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Enviar mensagem" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Brasil,<br /> 
+									Minas Gerais<br />
+									Santa Rita de Caldas<br />
+									
+								</li>
+								<li class="icon solid fa-envelope">luisgustavoaut@gmail.com</li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/diad_luis">instagram.com/diad_luis</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Página sem licença.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
