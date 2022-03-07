@@ -9,7 +9,7 @@
 		<script type="text/javascript" id="MathJax-script" async
   			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 		</script>
-		<title>Controle | LGD Simão</title>
+		<title>Controle | LGDS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,19 +22,19 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Controle | LGD Simão</a></h1>
+						<h1><a href="index.html">Página Inicial</a></h1>
 						<nav>
-							<a href="#menu">Opções</a>
+							<a href="#menu">Menu</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
-							<h2>Opções</h2>
+						<h2>Menu</h2>
 							<ul class="links"> 
-	 							<li><a href="controle.html">Introdução à Teoria de Controle</a></li>
-								<li><a href="latex.html">Introdução ao Latex</a></li>
+	 							<li><a href="controle.html">Teoria de Controle</a></li>
+								<li><a href="latex.html">Latex</a></li>
 							</ul>
 							<a href="#" class="close">Fechar</a>
 						</div>
@@ -58,51 +58,42 @@
 									<h3 class="major">Desvendando a teoria de controle</h3>
 									
 									<p>
-									Se você já sabe o que é, sugiro pular esta introdução, mas se mesmo já sabendo deseja ler, sinta-se à vontade para revisar qualquer conceito abordado e dar sua sugestão de correção ou aprimoramento. 									
+										Teoria de controle é como regular a temperatura do chuveiro quando vamos tomar banho. A temperatura é a saída que se deseja controlar. A vazão de água é a entrada do sistema, a torneira é o atuador, sua mão o sensor, seu cérebro o controlador e e assim tempos um sistema de controle, com planta, entrada, saída, controlador, sensor, realimentação e tudo mais.
 									</p>
 
 									<p>
-									Esta secção é para você que não possui conhecimento algum em relação à teoria e deseja compreender alguma coisa, seja pela curiosidade humana seja pela necessidade de passar em <b>controle clássico</b>, <b>moderno</b>, <b>robusto</b>, e afins. Ora, trata-se de um campo de estudos tal como a matemática e completamente fundado nela, mas com uma abordagem mais prática, e me permito dizer simples em certos cálculos e com um potencial incrível.
-									</p>
-
-									<p>
-									Teoria de controle é como regular a temperatura do chuveiro quando vamos tomar banho. A temperatura é a saída que se deseja controlar. A vazão de água é a entrada do sistema, a torneira é o atuador, sua mão o sensor, seu cérebro o controlador e e assim tempos um sistema de controle, com planta, entrada, saída, controlador, sensor, realimentação e tudo mais.
-									</p>
-
-									<p>
-									Vamos examinar um pouco mais este sistema, ele possui, duas <b>entradas</b> que podem ser controladas e duas <b>saídas</b> que deseja-se controlar.
+										Vamos examinar um pouco mais este sistema, ele possui, duas <b>entradas</b> que podem ser controladas (vazão e resistência do chuveiro) e duas <b>saídas</b> que deseja-se controlar (vazão e temperatura da água).
 									</p>
 									
 									<p>
-									<b>Entrada 1</b>. A posição do chuveiro: possui três <b>estados</b> (inverno, verão e desligado) que determinam a resistência e consequentemente sua temperatura e a da água que passa por ela, estamos controlando a resistência, que controla a corrente que controla o calor que é entregue ao <b>sistema</b>.
+										<b>Resistência do chuveiro:</b> possui três posições (inverno, verão e desligado) que determinam a resistência e consequentemente sua temperatura e a da água que passa por ela. Sendo assim, estamos controlando a resistência, que controla a corrente que controla o calor à água, temos uma das entradas.
 									</p>
 									
 									<p>
-									<b>Entrada 2.</b> A vazão de água: sabemos que a temperatura da água pode aumentar reduzindo-se a vazão de água através da torneira, isso pois se a temperatura que é entregue é constante a variação da massa de água faz variar a massa específica da água. Simplificando com um exemplo, é como aquecer 1 litro de água e 2 litros de água em uma mesma temperatura, por um mesmo tempo. Ao final aquela com 1 litro estará mais aquecida que aquela de 2 litros.
+										<b>Vazão da água:</b> sabemos que a temperatura da água pode aumentar reduzindo-se a vazão de água através da torneira, isso pois se a temperatura que é entregue é constante a variação da massa de água faz variar a massa específica da água. Simplificando com um exemplo, é como aquecer 1 litro de água e 2 litros de água em uma mesma temperatura, por um mesmo tempo. Ao final aquela com 1 litro estará mais aquecida que aquela de 2 litros. Temos então a segunda entrada
 									</p>
 									
 									<p>
-									<b>Saída 1.</b> A temperatura da água: considera-se como saída aquela unidade que se deseja controlar.
+										<b>Temperatura da água:</b> considera-se como saída aquela unidade que se deseja controlar, nosso caso é a temperatura da água e
+									</p>									
+									<p>
+										<b>A vazão de água:</b> que é outra <b>variável</b> que se deseja controlar, e assim temos as duas saídas.
 									</p>
 									
 									<p>
-									<b>Saída 2.</b> A vazão de água: outra <b>variável que se deseja controlar</b>
-									</p>
-									
-									<p>
-									Definias as entradas e saídas e as relações entre entrada e saída por meio de sistemas de equações matemáticas, do tipo
+										Este é um exemplo das infinitas possibilidades de aplicação à teoria de controle, visto que definias as entradas e saídas e as relações entre elas por meio de sistemas de equações diferenciais, qualquer sistema Linear e Invariante no Tempo é passível de controle, objetivamente, equações do tipo:
 									</p>
 
 									$$ a_2 \frac{dc^2(t)}{dt^2} + a_1 \frac{dc(t)}{dt} + a_0c(t) = b_1 \frac{dr(t)}{dt} + a_0r(t)$$
 
 									<p>
-									caso sua representação seja linear e invariante no tempo, podemos transformar seu domínio e estabelecer uma representação do domínio da frequência
+									Sabendo que esta é linear e invariante no tempo, podemos transformar seu domínio e estabelecer uma representação do domínio da frequência podemos utilizar a transformada de Laplace seja à uma equação ou a um sistema de equações diferenciais, e obter uma representação do tipo:
 									</p>
 									
 									$$ C(s)(a_2s^2 + a_1s + a_0) = R(s)(b_2s^2 + b_1s + b_0) $$	
 									
 									<p>
-									mas por hora saber que ela existe e pode ser representada por um diagrama de blocos.<br>
+									Um sistema invariante no tempo basicamente nos diz que qualquer sistema depois de estabelecido um modelo, deverá ter seu comportamento conhecido baseado em suas entradas e condições iniciais. Ou seja, depois que você sabe que são três posições para o chuveiro e uma variação dentro de um intervalo finito de possibilidade para a vazão da água, é possível dizer qual a temperatura dela em qualquer momento sabendo-se das condições iniciais, ou seja, temperatura inicial da água, e afins.<br>
 									</p>
 
 									<!-- Inicio do bloco imagem com legenda  -->
@@ -126,27 +117,6 @@
 									<p>
 										
 									</p>
-
-									<h3 class="major">Instalações Industriais</h3>
-									<p>Oferecemos projetos elétricos de média tensão, para sua indústria ou comércio que necessitam</p>
-
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
-
-											<h3 class="major">Projeto executados</h3>
-											
-											<p>Aqui temos o exemplo de um projeto de iluminação em residência</p>
-											<a href="#" class="special">Saiba mais</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
-											<h3 class="major">Projeto executado dois</h3>
-											<p>Aqui temos outro exemploe de projeto</p>
-											<a href="#" class="special">Saiba mais</a>
-										</article>
-									</section>
-
 								</div>
 							</div>
 
@@ -155,39 +125,19 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Contate-nos</h2>
-							<p>Dúvidas e sugestões, entre em contato</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Nome</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Mensagem</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Enviar mensagem" /></li>
-								</ul>
-							</form>
+							<h2 class="major">Contato</h2>
+							
+
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Brasil,<br /> 
-									Minas Gerais<br />
+									Brasil, Minas Gerais<br />
 									Santa Rita de Caldas<br />
-									
 								</li>
+								<li class="icon solid fa-phone"><a href="https://wa.me/+5535992355056">(35)992355056</a></li>
 								<li class="icon solid fa-envelope">luisgustavoaut@gmail.com</li>
-								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/diad_luis">instagram.com/diad_luis</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Página sem licença.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Desenvolvido por Luis Gustavo Dias Simão. </li><li>Template obtido em: <a href="http://html5up.net">HTML5 UP</a></li><li>Atualizado em: 06/03/22</li>	
 							</ul>
 						</div>
 					</section>
