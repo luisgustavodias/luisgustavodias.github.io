@@ -9,7 +9,7 @@
 		<script type="text/javascript" id="MathJax-script" async
   			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 		</script>
-		<title>Latex por LGDS</title>
+		<title>Latex | LGDS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Página Principal | LGDS </a></h1>
+						<h1><a href="index.html">Página Inicial</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -31,9 +31,10 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
+						<h2>Menu</h2>
 							<ul class="links"> 
-	 							<li><a href="controle.html">Introdução à Teoria de Controle</a></li>
-								<li><a href="latex.html">Introdução ao Latex</a></li>
+	 							<li><a href="controle.html">Teoria de Controle</a></li>
+								<li><a href="latex.html">Latex</a></li>
 							</ul>
 							<a href="#" class="close">Fechar</a>
 						</div>
@@ -44,7 +45,7 @@
 						<header>
 							<div class="inner">
 								<h2>Latex</h2>
-								<p>Prático, simples e eficiente, Latex auxilia na criação de artigos, livros, manuais, e por aí vai.</p>
+								<p>Automatizar normas, adequar textos de forma eficiente, Latex auxilia na criação de artigos, livros e manuais.</p>
 							</div>
 						</header>
 
@@ -52,40 +53,46 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Poema à Pitágoras</h3>
+									<h3 class="major">Pitágoras em Latex</h3>
 									<p>
-									Se a soma do quadrado dos catetos, neste ou em outros momentos
+									O Teorema de Pitágoras diz que, sendo o triângulo retângulo apresentado abaixo de hipotenusa (a) e catetos (b) e (c), 
+									</br>
+									sabemos que a soma do quadrado dos catetos é igual ao quadrado da hipotenusa, ou seja:
 									</p>
+									$$ a^2 = b^2 + c^2 $$
 									<p>
-									Resulta no quadrado da hipotenusa, mesmo pra quem nega e abusa
-									$$ a^2  = b^2 + c^2 $$
+									ou ainda, podemos dizer que:
 									</p>
-									<p>
-									Dizer à alguém, olha, deduza, pode ser algebricamente sem frescura:
-									$$ a^ = \sqrt{b^2 + c^2} $$
-									</p>
+									$$ a = \sqrt{b^2 + c^2} $$
 									
-
-									<h3 class="major">Instalações Industriais</h3>
-									<p>Oferecemos projetos elétricos de média tensão, para sua indústria ou comércio que necessitam</p>
-
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
-
-											<h3 class="major">Projeto executados</h3>
-											
-											<p>Aqui temos o exemplo de um projeto de iluminação em residência</p>
-											<a href="#" class="special">Saiba mais</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /><h8><center>Tentativa de legenda</center></h8></a>
-											<h3 class="major">Projeto executado dois</h3>
-											<p>Aqui temos outro exemploe de projeto</p>
-											<a href="#" class="special">Saiba mais</a>
-										</article>
-									</section>
-
+									<h3 class="major">Cálculo em Latex</h3>
+									<p>
+									Queremos descrever equações mais complexas, como o Teorema da Divergência de Gauss:
+									</p>
+									$$ \int_D ({\nabla\cdot} F)dV=\int_{\partial D} F\cdot ndS $$
+									<p>
+									Ou ainda você pode descrever a Integral de Cauchy
+									</p>
+									$$ f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz $$	
+									
+									<h3 class="major">Relatórios Acadêmicos em Latex</h3>
+									<p>
+									Relatórios podem ser desprendiosos devido às normas às quais devem seguir, nestes casos a utilização do Latex auxilia estabelecendo um modelo a ser seguido. </br>
+									Por exemplo o desenvolvimento destes relatórios de física</br>
+									</p>								
+									<a href="./queijo/Lab_FIS_III_Inducao_Eletromagnetica_Lei_Faraday_Lei_Lenz.pdf" class="special">
+										Relatório de Indução Eletromagnética
+									</a>
+									<a href="./queijo/Lab_FIS_III_Fenomenos_magneticos_Lei_Ampere.pdf" class="special">
+										Relatório de Fenômenos Magnéticos 
+									</a>
+									<a href="./queijo/Lab_FIS_III_Capacitancia_Capacitores.pdf" class="special">
+										Relatório de Capacitância e Capacitores 
+									</a>
+									<p>
+									Abaixo se encontra o modelo de relatório de capacitância e capacitores, desenvolvido no site <a href="www.overleaf">Overleaf</a>, por meio do Latex:
+									</p>
+									<a href="https://www.overleaf.com/read/rjstqbjqnkhd" class="special">Modelo do Relatório em Tex</a>
 								</div>
 							</div>
 
@@ -94,41 +101,20 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Entre em contato</h2>
-							<p>Temos uma equipe disposta a atendê-lo e sanar todas as suas dúvidas</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Nome</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Mensagem</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Enviar mensagem" /></li>
-								</ul>
-							</form>
+							<h2 class="major">Saiba mais</h2>
+						
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Brasil, Minas Gerais<br />
-									Santa Rita de Caldas<br />
-									Rua Prefeito Sebastião Januzzi, 25
-								</li>
-								<li class="icon solid fa-phone">(35) 992355056</li>
-								<li class="icon solid fa-envelope"><a href="#">juntamultilider@gmail.com</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<h1 class="content">Tutoriais e Modelos</h1>
+								<li><a href="http://sbi.iqsc.usp.br/files/Manual-SBI_LATEX_2013-.pdf" class="special">Para artigos científicos (PT)</a></li>
+								<li><a href="https://www.overleaf.com/latex/templates" class="special">Templates diversos (EN/PT)</a></li>
+								<h1 class="content">Pacotes Latex</h1>	
+								<li><a href="http://linorg.usp.br/CTAN/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf" class="special">Para circuitos (EN)</a><li>
+								<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" class="special">Para matemática (EN)</a><li>
+								<li><a href="http://ctan.math.utah.edu/ctan/tex-archive/graphics/pgf/contrib/ladder/ladder.pdf" class="special">Para Ladder (EN)</a><li>
+								<li><a href="https://pt.wikipedia.org/wiki/BibTeX" class="special">Lista de pacotes (EN)</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Desenvolvido por Luis Gustavo Dias Simão. </li><li>Template obtido em: <a href="http://html5up.net">HTML5 UP</a></li><li>Atualizado em: 06/03/22</li>	
 							</ul>
 						</div>
 					</section>
