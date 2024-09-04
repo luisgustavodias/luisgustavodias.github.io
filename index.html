@@ -10,9 +10,56 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+
 	</head>
 	<body class="is-preload">
+	<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+	import { getDatabase, ref, child, push, update, runTransaction } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js'
+
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+		apiKey: "AIzaSyAEUxzSVkLEMiPiFJ7iYl61vSh6PAXpW5I",
+		authDomain: "sitepessoal-lgds.firebaseapp.com",
+		databaseURL: "https://sitepessoal-lgds-default-rtdb.firebaseio.com",
+		projectId: "sitepessoal-lgds",
+		storageBucket: "sitepessoal-lgds.appspot.com",
+		messagingSenderId: "544957539129",
+		appId: "1:544957539129:web:092a9341d07320c81d3ee8",
+		measurementId: "G-G6HCQ2JBDE"
+	};
+
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const database = getDatabase(app);
+
+	// Função que atualiza o contador de visitas
+	document.addEventListener("DOMContentLoaded", function () {
+		const visitorCountRef = ref(database, 'visitorCount');
+
+		// Incrementa o contador de visitantes usando runTransaction
+		runTransaction(visitorCountRef, (currentCount) => {
+			if (currentCount === null) {
+				return 1;  // Se o contador não existir, inicializa em 1
+			}
+			return currentCount + 1;  // Incrementa o contador
+		}).then((result) => {
+			if (result.snapshot.exists()) {
+				document.getElementById('visitor-count').textContent = result.snapshot.val();
+			}
+		}).catch((error) => {
+			console.error("Erro ao atualizar o contador:", error);
+		});
+	});
+	  
+	</script>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -144,7 +191,10 @@
 								<li class="icon solid fa-envelope">luisgustavoaut@gmail.com</li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Desenvolvido por Luis Gustavo Dias Simão. </li><li>Template obtido em: <a href="http://html5up.net">HTML5 UP</a></li><li>Atualizado em: 04/03/22</li>	
+								<li>&copy; Desenvolvido por Luis Gustavo Dias Simão. </li><li>Template obtido em: <a href="http://html5up.net">HTML5 UP</a></li><li>Atualizado em: 04/03/22</li><li>Total de Visitantes: <span id="visitor-count">0</span></li> 	
+							</ul>
+							<ul>
+								
 							</ul>
 						</div>
 					</section>
@@ -152,6 +202,7 @@
 			</div>
 
 		<!-- Scripts -->
+					
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
